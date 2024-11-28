@@ -1,0 +1,62 @@
+body {
+  max-width: 900px;
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+h1 {
+  margin-bottom: 2rem;
+}
+
+.projects-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.project-card {
+  flex: 1 0 200px;
+
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 1rem;
+
+  background-color: #fff;
+}
+
+.project-card:hover {
+  transform: scale(1.025);
+  transition: all 100ms ease-in-out;
+}
+
+.project-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex: 3;
+}
+
+.projects-wrapper img {
+  height: 150px;
+  width: 150px;
+
+  object-fit: cover;
+  flex: 2;
+
+  border-radius: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .shadow {
+    box-shadow: none;
+  }
+
+  .projects-wrapper {
+    flex-direction: column;
+  }
+
+  img {
+    height: 100%;
+  }
+}
